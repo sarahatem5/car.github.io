@@ -1,4 +1,4 @@
-/* css for footer*/
+/* css for start footer*/
 .yf{
      background-color: black; 
      padding: 0;
@@ -83,6 +83,8 @@
 }
 .yph{
     display: flex;
+}
+/* end footer    */
     display: inline-block;
     font-size: 40px;
     height: 40px;
