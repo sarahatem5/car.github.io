@@ -83,10 +83,9 @@
 }
 .yph{
     display: flex;
-}
-/* end footer    */
     display: inline-block;
     font-size: 40px;
     height: 40px;
     width: 40px;
 }
+/* end footer    */
