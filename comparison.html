@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css.css">
+    <script src="comp/comparison.js"></script>
+    <link rel="icon" href="image/logo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>comparison</title>
+</head>
+<body id="h-h-body">
+    <a href="index.html" class="zimage1">
+		<img src="image/logo.ico" width="70px" height="50px">
+	</a>
+	<div class="ztopnav" style="">
+		<a onclick=showSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z"/></svg></a>
+		<a href="contact-us.html">Contact us</a>
+		<a href="Reviews.html">Reviews</a>
+		<a href="brands.html">Brands</a>
+		<a href="log-in.html">Log in</a>
+        
+	</div>
+	<div>
+		<ul class="zsidebar">
+			<li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z"/></svg></a></li>
+			<li><a href="profile.html">Profile</a></li>
+			<li><a href="Price.html">Prices</a></li>
+			<li><a href="BS.html">Best sales</a></li>
+			<li><a href="comparison.html">Compare</a></li>
+			<li><a href="mc.html">Maintenance Centers</a></li>
+			<li><a href="aboutus.html">About us</a></li>
+		</ul>
+	</div>
+	<script src="js.js"></script>
+    <div>
+        <table id="h-cars">
+            <thead >
+                <tr>
+                    <td colspan="2" class="h-ras">choose a car</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="2" class="h-ras"> ferrari</td></tr>
+                <tr>
+                    <td><input type="button" value="SF90 spider" onclick="hcol1(1)"></td>
+                    <td><input type="button" value="SF90 spider" onclick="hcol2(111)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="296 GTS" onclick="hcol1(2)"></td>
+                    <td><input type="button" value="296 GTS" onclick="hcol2(222)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Roma" onclick="hcol1(3)"></td>
+                    <td><input type="button" value="Roma" onclick="hcol2(333)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="La ferrari" onclick="hcol1(4)"></td>
+                    <td><input type="button" value="La ferrari" onclick="hcol2(444)"></td>
+                </tr>
+                <tr><td colspan="2" class="h-ras"> prosche</td></tr>
+                <tr>
+                    <td><input type="button" value="911 GT2 RS" onclick="hcol1(5)"></td>
+                    <td><input type="button" value="911 GT2 RS" onclick="hcol2(555)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="911 tarbo" onclick="hcol1(6)"></td>
+                    <td><input type="button" value="911 tarbo" onclick="hcol2(666)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="carrer" onclick="hcol1(7)"></td>
+                    <td><input type="button" value="carrer" onclick="hcol2(777)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="718 Boxster" onclick="hcol1(8)"></td>
+                    <td><input type="button" value="718 Boxster" onclick="hcol2(888)"></td>
+                </tr>
+                <tr><td colspan="2" class="h-ras">Astone martin</td></tr>
+                <tr>
+                    <td><input type="button" value="DB12" onclick="hcol1(9)"></td>
+                    <td><input type="button" value="DB12" onclick="hcol2(999)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="DBS coupe" onclick="hcol1(10)"></td>
+                    <td><input type="button" value="DBS coupe" onclick="hcol2(110)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="vantage" onclick="hcol1(11)"></td>
+                    <td><input type="button" value="vantage" onclick="hcol2(1111)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="valkyrie" onclick="hcol1(12)"></td>
+                    <td><input type="button" value="valkyrie" onclick="hcol2(112)"></td>
+                </tr>
+                <tr><td colspan="2" class="h-ras">lamborghini</td></tr>
+                <tr>
+                    <td><input type="button" value="huracan" onclick="hcol1(13)"></td>
+                    <td><input type="button" value="huracan" onclick="hcol2(113)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="aventador" onclick="hcol1(14)"></td>
+                    <td><input type="button" value="aventador" onclick="hcol2(114)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="gallardo" onclick="hcol1(15)"></td>
+                    <td><input type="button" value="gallardo" onclick="hcol2(115)"></td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <table id="h-crc">
+            <tr>
+                <td class="h-cat">hp</td>
+                <td class="h-dog" id="a"></td>
+                <td id="aa"></td>
+                
+            </tr>
+            <tr>
+                <td class="h-cat">engine</td>
+                <td class="h-dog" id="b"></td>
+                <td id="bb"></td>
+            </tr>
+            <tr>
+                <td class="h-cat">0-100km/h</td>
+                <td class="h-dog" id="c"></td>
+                <td id="cc"></td>
+            </tr>
+            <tr>
+                <td class="h-cat">price</td>
+                <td class="h-dog" id="d"></td>
+                <td id="dd"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="h-vid">
+        <video height="500px" width="500px" controls poster="image/logo.ico">
+            <source src="media/h-cars-ved.mp4" type="video/mp4">
+        </video>
+        <div id="h-h2">
+            <h2>we recommend to see this explaination video</h2><h2> to know how to understand the comparison</h2>
+            </div>
+        </div>
+        <br>
+        <center>
+        <iframe src="https://www.autozone.com/diy/trustworthy-advice/basic-parts-of-a-car-and-their-functions" frameborder="0" ></iframe></center>
+        <div id="h-arrow">
+            <img src="image/h-arrow.png" alt="" style="height: 100px; rotate: 180deg;">
+            <figcaption>
+                <a href="https://www.autozone.com/diy/trustworthy-advice/basic-parts-of-a-car-and-their-functions" target="_blank">cars cataloge</a>
+            </figcaption>
+        </div>
+    <script src="js.js"></script>
+    
+    <footer class="yf" style="margin-top: 100px;">
+        <a href="index.html"><img src="image/logo.ico" alt="logo for website " class="yicon"></a>
+        <div class="yy">
+        <ul class="yl">
+           <a href="log-in.html"><li>Log in</li></a>
+           <a href="brands.html"><li>Brands</li> </a>
+           <a href="price.html"> <li>price</li> </a>
+       </ul>
+       <ul class="yyl">
+           <a href="BS.html"> <li>Best sales</li> </a>
+           <a href="comparison.html"> <li>Comparison</li> </a>
+           <a href="mc.html"> <li>Maintenance Center</li></a>
+       </ul>
+        <ul class="yll">
+           
+           <a href="Review.html"><li>Rating</li></a>
+           <a href="contact-us"><li>contact us</li></a>
+           <a href="aboutus.html"><li>About us </li></a>
+       
+        </ul>
+       </div>
+        <div class="yy">
+           <p class="yp"><b>IF you have a question you can contact us with</b></p>
+           <div class="yic">
+           <i class="fa fa-facebook-square"></i>
+           <i class="fa fa-instagram"></i>
+           <i class="fa fa-linkedin-square"></i>
+           </div>
+        </div>
+        <p class="yc"><strong> &copy;cars.com 2024</strong></p>
+       
+       </footer>
+       <p class="h-me">سارة حاتم محمد احمد   العطار</p>
+       <br>
+       <p class="h-me" style="padding-top: 30px; padding-left: 95px;">20230244</p>
+</body>
+</html>
