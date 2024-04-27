@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="css.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>contact-us</title>
+  <style>
+    *{
+       margin: 0px;
+       padding: 0px;
+       box-sizing: border-box;
+       font-family: sans-serif;
+     }
+  </style>
+  </head>
+  <body>
+    <!--nav-->
+    <a href="index.html" class="zimage1">
+      <img src="Logo.ico" width="70px" height="50px">
+    </a>
+    <div class="ztopnav">
+      <a onclick=showSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z"/></svg></a>
+      <a href="contact-us.html">Contact us</a>
+      <a href="Reviews.html">Reviews</a>
+      <a href="brands.html">Brands</a>
+      <a href="log-in.html">Log in</a>
+    </div>
+    <div>
+      <ul class="zsidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z"/></svg></a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="Price.html">Prices</a></li>
+        <li><a href="BS.html">Best sales</a></li>
+        <li><a href="comparison.html">Compare</a></li>
+        <li><a href="mc.html">Maintenance Centers</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+      </ul>
+    </div>
+     <!-- end nav-->
+    <section class="s-contact">
+      <pre class="sname">
+        Name : Salma Essam Hamdy Sayed
+        ID : 20230254
+      </pre>
+      <div>
+       <video class="sv" width="300" height="200" controls muted loop>
+         <source src="media/thank you.mp4" type="video/mp4">
+       </video>
+      </div>
+      <div class="s-ccontainer">
+        <h1 class="s-heading">Contact Us</h1>
+        <div class="s-contact-frame">
+          <div class="s-contact-form">
+            <h3>Send us a message</h3>
+            <form>
+              <div class="s-form-group">
+                <input class="sinput" type="text" name="name" placeholder="Your Name">
+              </div>
+              <div class="s-form-group">
+                <input class="sinput" type="email" name="email" placeholder="Your Email">
+              </div>
+              <div class="s-form-group">
+                <input class="sinput" type="number" name="number" placeholder="Your Number">
+              </div>
+              <div class="s-form-group">
+                <textarea class="stextarea" name="message" placeholder="Your Message"></textarea>
+              </div>
+              <div class="s-con">
+                <button class="sb" type="submit" onclick="sopenPopup()">Send Message</button>
+                <div class="spopup" id="spopup">
+                  <img class="si" src="image/tick.png">
+                  <h3 class="sh">Thank You!</h3>
+                  <p class="spa">Your Message has been sent successfully<i class='bx bx-smile'></i></p>
+                 <button class="s-btn" type="button" onclick="sclosePopup()">OK</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="s-contact-info">
+            <h3>Contact Information</h3>
+            <p><i class='bx bxs-phone'></i>+20 155 345 3450</p>
+            <p><i class='bx bxs-envelope'></i>cars@gmail.com</p>
+            <p><i class='bx bxs-map'></i>
+              <table class="sta">
+                <tr>
+                  <th class="sth" colspan="2">City</th>
+                  <th>Country</th>
+                </tr>
+                <tr>
+                  <td class="std">
+                    <ul class="sul">
+                      <li class="sli">Helwan</li>
+                      <li class="sli">Maadi</li>
+                    </ul>
+                  </td>
+                  <td class="std">Cairo</td>
+                  <td class="std">Egypt</td>
+                </tr>
+                <tr>
+                  <td class="std">
+                    <ul class="sul">
+                      <li class="sli">Al Rimal</li>
+                      <li class="sli">Ar Rawdah</li>
+                    </ul>
+                  </td>
+                  <td class="std">Riyadh</td>
+                  <td class="std">Saudi Arabia</td>
+                </tr>
+              </table>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="yf">
+      <a href="index.html"><img src="image/yicon.png" alt="logo for website " class="yicon"></a>
+      <div class="yy">
+      <ul class="yl">
+         <a href="log-in.html"><li>Log in</li></a>
+         <a href="brands.html"><li>Brands</li> </a>
+         <a href="price.html"> <li>price</li> </a>
+     </ul>
+     <ul class="yyl">
+         <a href="BS.html"> <li>Best sales</li> </a>
+         <a href="comparison.html"> <li>Comparison</li> </a>
+         <a href="mc.html"> <li>Maintenance Center</li></a>
+     </ul>
+      <ul class="yll">
+         
+         <a href="Review.html"><li>Rating</li></a>
+         <a href="contact-us.html"><li>contact us</li></a>
+         <a href="aboutus.html"><li>About us </li></a>
+     
+      </ul>
+     </div>
+      <div class="yy">
+         <p class="yp"><b>IF you have a question you can contact us with</b></p>
+         <div class="yic">
+         <i class="fa fa-facebook-square"></i>
+         <i class="fa fa-instagram"></i>
+         <i class="fa fa-linkedin-square"></i>
+         </div>
+      </div>
+      <p class="yc"><strong> &copy;cars.com 2024</strong></p>
+     </footer>
+
+     <script src="js.js"></script>
+
+  </body>
+</html>
+
