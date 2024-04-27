@@ -23,6 +23,7 @@
     .Jmodels{
         grid-template-columns: auto;
     }
+    /*////////////////////////////// start of maintance center////////////////////////*/
     .y{
     background-image: url(image/yground4.jpg);
    background-repeat: no-repeat;
@@ -323,7 +324,7 @@
     height: 40px;
     width: 40px;
 }
-}
+/*//////////////////////////enr of footer//////////////////////////////*/
 #Jh1{
     text-align: center;
     padding: 5px;
