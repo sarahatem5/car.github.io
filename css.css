@@ -23,6 +23,306 @@
     .Jmodels{
         grid-template-columns: auto;
     }
+    .y{
+    background-image: url(image/yground4.jpg);
+   background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+     background-size: cover; 
+} 
+
+.yn{
+     position: fixed; 
+    bottom: 0;
+    right: 0;
+    font-size: 15px;
+    color:blueviolet;
+}
+.yi{
+    width: 30%;
+    height: 30%;
+}  
+.yg:hover{
+    transform: scale(0.9,0.9);
+}
+.ymcx{
+    border-style: groove;
+    border-color: rgb(97, 5, 97);
+    border-width: 2px;
+}
+
+.yt {
+    width: 45%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.yt th, .yt td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.yt th {
+    background-color: #333;
+    color: #fff;
+}
+
+.yt tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.ys{
+    font-size: 25px;
+    font-family: Verdana;
+    color: rgb(90, 85, 85);
+}
+.yb{
+    background-color: darkmagenta;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    display: flex; 
+     width: 200px;
+}  
+.ym{
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+     display: inline-block; 
+      color:rgb(56, 54, 54); 
+} 
+
+.yb:hover {
+    background-color: rgb(66, 7, 66); 
+}
+
+.ya{
+    display: inline-block;
+    font-size: 35px;
+    font-family: Verdana;
+    margin-top: 25px;
+}
+.ymap{
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(133, 38, 133);
+}
+.ybrands{
+    border-style:outset;
+    border-width: 3px;
+    border-color: blueviolet;
+    margin: 20px;
+}
+.ybrand{
+    display: flex;
+    display: inline-block;
+     width: 250px;
+    overflow: hidden;
+    padding: 15px;
+    padding-left: 150px;
+    size: 250px;
+
+}
+.ybrand a{
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+}
+.ybrand a:hover{
+    color: rgb(59, 17, 99)
+}
+.ysmc{
+    text-align: center;
+    font-size: 23px;
+    color: darkmagenta;
+}
+.yss{
+    font-size: 23px;
+    margin-left: 80px;
+    margin-top: 40px;
+    color: rgb(72, 9, 131);
+}
+.ymc{
+    border-style: groove;
+    border-color: black;
+    border-width: 2px;
+}
+.ymc:hover{
+     transform: scale(0.9,0.9);
+     color: darkmagenta;
+}
+.ymc a:hover{
+    color: darkmagenta;
+}
+.ymc a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.yul{
+    list-style: none;
+    font-size: 19px;
+    font-family: arial;
+    display: flex;
+
+}
+.yul a{
+    text-decoration: none; 
+    color: black;
+    padding: 20px;
+    display: inline-block;
+    border-style: groove;
+    border-color: darkgray;
+    margin: 6px ;
+    border-radius: 50%;
+}
+.yul a:hover{
+    color: darkmagenta;
+    transform: scale(0.9,0.9);
+}
+.yce{
+    text-align: center;
+    font-size: 25px;
+    font-family: Helvetica;
+}
+
+.ybutton{
+    border: 0px;
+    background-color: white;
+    padding: 10px 60px;
+    cursor: pointer;
+    border-radius: 60px;
+}
+.ycard{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px black;
+    padding: 15px;
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    text-align: center;
+     height: 90px; 
+    transform: translate(-50%,-50%);
+    transform: all .5s;
+}
+.ycard.open{
+    opacity: 1;
+    top: 50%;
+}
+.yfr{
+    width: 400px;
+    height: 40px;
+    margin-left: 50px;
+    margin-right: 25px;
+}
+.yfl{
+    font-size: 25px;
+    font-family: Georgia;
+    color: darkmagenta;
+}
+.ytv{
+    display: flex;
+    flex-wrap: wrap;
+}
+.yv{
+    display: inline-block;
+    width: 350px;
+    height: 430px ;
+}
+
+/*////////////////////////footer////////////////////////////////*/
+.yf{
+     background-color: black; 
+     padding: 0;
+     margin: 0;
+}
+.yicon{
+    height: 150px;
+    width: 150px ;
+    margin-bottom: 80px;
+}
+.yy{
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
+}
+
+.yl{
+   list-style: none; 
+   display: inline-block;
+}
+.yl li{
+    color: white;
+}
+.yl a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px ;
+     padding-left: 120px; 
+}
+.yicon:hover{
+    transform: scale(0.9,0.9);
+}
+.yyl{
+    display: inline-block;
+    list-style: none;
+}
+.yyl li{
+    color: white;
+}
+.yyl a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px ;
+     padding-left: 260px; 
+}
+.yp{
+    padding: 10px;
+    margin: 5px ;
+    padding-left: 90px;
+    display: flex;
+    display: inline-block;
+}
+.yll{
+    list-style: none; 
+   display: inline-block;
+}
+.yll li{
+    color: white;
+}
+.yll a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px ;
+    padding-left: 200px;
+}
+.yic{
+    display: inline-block;
+    padding-left: 100px ;
+    font-size: 40px;
+}
+.yy li:hover{
+     color: hotpink;
+}
+.yc{
+    color: white;
+    text-align: center;
+    background-color: rgb(4, 4, 41);
+}
+.yph{
+    display: flex;
+    display: inline-block;
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+}
 }
 #Jh1{
     text-align: center;
