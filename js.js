@@ -185,6 +185,25 @@ function hcol1(x){
             document.getElementById("cc").innerHTML = "4.1sec";
             document.getElementById("dd").innerHTML = "177,890$";
         }
+        /* سما سيد عبداللطيف احمد*/
+        function ypop(){
+    let x= confirm("do you want to call them");
+    if (x) {
+        // Add code here to initiate the call
+        alert("sorry the number is not avilable");
+    } else {
+        alert("Call canceled.");
+    }
+}
+function ypopfed() {
+        show_ypopfed();
+}
+function  show_ypopfed(){
+    document.getElementById("ypopup").classList.add("open");
+}
+function hide_ypopfed(){
+    document.getElementById("ypopup").classList.remove("open");
+}
         }
 
 //------------------------------------------------------------------------------------------------
