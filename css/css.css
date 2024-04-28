@@ -167,7 +167,7 @@
 /*-------------------------------------------------------------------*/
 /*about us*/
 #h-body{
-  background-image: url('image/h-back.jpg');
+  background-image: url('../image/h-back.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
