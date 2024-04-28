@@ -242,7 +242,7 @@ a{
   color: rgb(61, 82, 110);
   /*display: flex;
   justify-self: start;*/
-  list-style-image: url('image/h.gif');
+  list-style-image: url('../image/h.gif');
   margin-left:15px ;
   margin-left: 50px;
 
