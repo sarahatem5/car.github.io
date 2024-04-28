@@ -1,49 +1,51 @@
-
-
+<!DOCTYPE html>
 <html>
-    <head >
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta charset="utf.8">
-      <title> Log In </title>
-      <link rel="stylesheet" href="css.css">
-     
-    </head>
-    <body class="liz" > 
-       
-          <br>
-          <center><h1 class="lon" > Welcome to hepta cars</h1></center>
-          
-         
-            <form class="loz">
-          
-    <p  class="ll" id="lamas">User name   <input type="text" id="les"placeholder="Please enter your name"></p>
-    <p class="ll" id="lama">  Email <input type="email" id="lesma"placeholder="Please enter your email"></p>
-    <p class="ll" id="lma"> Password <input type="password" value= "bb" id="lesmaa" placeholder="Please enter your password"></p>
-   <center class="meme"><input type="checkbox" id="lasy" onclick="samar() " > show password</center> 
-<p class="ll" id="lc"> Phone  number <input type="number" id="lesmaar"placeholder="Please enter ur number"></p>
-    <input type="checkbox" id="lav"  value="remember"><label for="sam"> I am not a robot</label>
-      <br> <input type="checkbox" id="sm" name="sr" value="i am not a robot"><label for="sm"> Remember me</label>
-       
-     <a href="aboutus.html" class="lam" >About us</a>
-               
-</form>
-                
-        <center>
-       
-      <a href="index.html"> <button  class="lio">Log In</button>
-          </a></center>
-         
-          
-      <script>  function samar(){
-        var x =document.getElementById("lesmaa");
-        if(x.type==="password"){
-            x.type="text";
-    
-        }
-        else{ x.type="password";}
-    } 
-    </script>     
-    </body>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MyCars</title>
+    <link rel="icon" href="image/zLogo.ico">
+	<link rel="stylesheet" href="css/css.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="zbody">
+	<a href="index.html" class="zimage1">
+		<img src="image/zLogo.ico" width="70px" height="50px" alt="Website Logo">
+	</a>
+	<div class="ztopnav">
+		<a onclick=showSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z"/></svg></a>
+		<a href="contact-us.html">Contact us</a>
+		<a href="Reviews.html">Reviews</a>
+		<a href="brands.html">Brands</a>
+		<a href="log-in.html">Log in</a>
+	</div>
+	<div>
+		<ul class="zsidebar">
+			<li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z"/></svg></a></li>
+			<li><a href="profile.html">Profile</a></li>
+			<li><a href="Price.html">Prices</a></li>
+			<li><a href="BS.html">Best sales</a></li>
+			<li><a href="comparison.html">Compare</a></li>
+			<li><a href="mc.html">Maintenance Centers</a></li>
+			<li><a href="aboutus.html">About us</a></li>
+		</ul>
+	</div>
+	<div class="zcontent">
+		<h1 class="ztext">Everything you need to know<br>about cars..</h1>
+		<img src="image/zferrari.png" class="zferrari">
+		<img src="image/zlambo.png" class="zlambo">
+		<img src="image/zporsche.png" class="zporsche">
+		<img src="image/zaston.png" class="zaston">
+		<img src="image/zbmw.png" class="zbmw">
+		<img src="image/zmercedes.png" class="zmercedes">
+		<img src="image/zaudi.png" class="zaudi">
+		<img src="image/ztoyota.png" class="ztoyota">
+		<img src="image/znissan.png" class="znissan">
+		<img src="image/zhyundai.png" class="zhyundai">
+		<img src="image/zchevrolet.png" class="zchevrolet">
+	</div>
+	<!-- start footer -->
+	<!-- end footer -->
+	<script src="js/js.js"></script>
+</body>
 </html>
-
-
