@@ -205,5 +205,19 @@ function hide_ypopfed(){
     document.getElementById("ypopup").classList.remove("open");
 }
         }
-
 //------------------------------------------------------------------------------------------------
+
+//contact-us popup
+let spopup = document.getElementById("spopup");
+let form = document.querySelector("form");
+function sopenPopup (event){
+  event.preventDefault(); 
+  spopup.classList.add("sopen-popup");
+}
+function sclosePopup (){
+  spopup.classList.remove("sopen-popup");
+} 
+form.addEventListener("submit", sopenPopup); 
+//end contact-us popup
+
+
