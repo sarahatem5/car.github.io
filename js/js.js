@@ -1,4 +1,4 @@
-    //  start seif
+//  start seif
 function popup(){
     alert("sent successfully");
 }
@@ -232,3 +232,12 @@ function hide_ypopfed(){
         }
 
 //------------------------------------------------------------------------------------------------
+//زياد أحمد صلاح الدين 20230226
+function showSidebar(){
+    const zsidebar= document.querySelector('.zsidebar')
+    zsidebar.style.display = 'flex'
+}
+function hideSidebar(){
+    const zsidebar= document.querySelector('.zsidebar')
+    zsidebar.style.display = 'none'
+}
