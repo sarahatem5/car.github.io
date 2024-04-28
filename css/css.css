@@ -1,3 +1,335 @@
+/* S A L M A*/
+/*brands*/
+.s-name{
+  text-align: left;  
+  font-size: 12px;
+  font-family: sans-serif;
+}
+.s-porsche{
+  width: 140px;
+}
+.s-lam{
+  width: 170px;
+}
+.s-ferrari{
+  width: 150px;
+}
+.s-mer{
+  width: 190px;
+}
+.s-fiat{
+  width: 200px;
+}
+.s-bmw{
+  width: 200px;
+}
+.s-che{
+  width: 250px;
+  margin-top: 20px;
+}
+.s-hy{
+  width: 220px;
+}
+.s-aston{
+  width: 220px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.s-toy{
+  width: 200px;
+}
+.s-nissan{
+  width: 200px;
+}
+.s-audi{
+  width: 200px;
+}
+.shtml{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+.sbody{
+  background: #ddd;
+}
+.s-container{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.s-container .s-title{
+  font-size: 3.5rem;
+  color: #444;
+  margin-bottom: 3rem;
+  display: inline-block;
+}
+
+.s-container .s-cars-container{
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+.s-container .s-cars-container .s-car{
+  text-align: center;
+  padding: 4rem 4rem;
+  background: #fff;
+  box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+  cursor: pointer;
+  outline: .1rem solid #ccc;
+  outline-offset: -1.5rem;
+}
+.s-container .s-cars-container .s-car:hover{
+  outline: .2rem solid #222;
+  outline-offset: 0;
+}
+.s-container .s-cars-container .s-car:hover .simg{
+  transform: scale(.9);
+}
+.s-container .s-cars-container .s-car .sh3{
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #444;
+}
+.s-container .s-cars-container .s-car:hover .sh3{
+  color: #222;
+}
+/*end brands*/
+/* search box */
+.ssearch-box{
+	width: 600px;
+	background: #fff;
+  margin-left: 350px;
+	border-radius: 6px;
+}
+.srow{
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+}
+.sin{
+	flex: 1;
+	height: 50px;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	font-size: 18px;
+	color: #333;
+}
+.searchbtn{
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+.searchbtn .bx{
+	width: 25px;
+	color: #555;
+	font-size: 22px;
+	cursor: pointer;
+	margin-top: 5px;
+}
+.ssin::placeholder{
+	color: #555;
+}
+.sresult-box ul{
+	border-top: 1px solid #999;
+	padding: 15px 10px;
+}
+.sresult-box ul li{
+	list-style: none;
+  font-family: sans-serif;
+  font-size: 20px;
+	border-radius: 3px;
+	padding: 15px 10px;
+}
+.sresult-box ul li:hover{
+	background: #ddd;
+}
+.sresult-box{
+	max-height: 300px;
+	overflow-y: scroll;
+}
+/*end search box*/
+/* contact-us */
+.sv{
+  margin-left: 20px;
+  margin-top: 20px;
+  float: right;
+}
+.sta, .sth, .std {
+  border: 3px solid;
+  border-radius: 3px;
+  border-collapse: collapse;
+  border-color: #888;
+  font-size: 16px;
+  color: #444;
+  width: 100%;
+}
+.sth, .std {
+  border: 1px solid #888;
+  padding: 10px;
+  text-align: left;
+}
+
+.sul {
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.sul ,.sli {
+  list-style: inside;
+  margin-bottom: 5px;
+}
+
+.sname{
+  text-align: left;
+  font-size: 12px;
+}
+
+.s-contact{
+  height: 800px;
+  background-color: #ddd;
+  padding: 50px;
+  text-align: center;
+}
+
+.s-ccontainer{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.s-ccontainer h1{
+  font-size: 36px;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.s-contact-frame{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  grid-gap: 150px;
+}
+
+.s-contact-form{
+  text-align: left;
+}
+.s-contact-form h3{
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.s-form-group{
+  margin-bottom: 20px;
+}
+
+.sinput, .stextarea{
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.sinput:focus,
+.stextarea:focus{
+  outline: none;
+  box-shadow: 0 0 8px #888;
+}
+
+.sb{
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #aaa;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.sb:hover{
+  opacity: 0.9;
+}
+.sb:active{
+  opacity: 0.6;
+}
+
+.s-contact-info{
+  text-align: left;
+}
+.s-contact-info h3{
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #222;
+}
+.s-contact-info p{
+  margin-bottom: 10px;
+  color: #444;
+}
+.s-contact-info i{
+  color:#888 ;
+  margin-right: 10px;
+}
+/* POPUP */
+.s-con{
+  width: 100%;
+  height: 100hv;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spopup{
+  width: 410px;
+  height: 210px;
+  background: #fff;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  background: #f8f9fa;
+  visibility: hidden;
+  transition: transform 0.4s,top 0.4s;
+}
+.sopen-popup{
+  visibility:visible ;
+  top: 40%;
+  transform: translate(-50%,-50%) scale(1);
+}
+.spopup .si{
+  width: 90px;
+  margin-left: 160px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.spopup .sh{
+  margin-left: 140px;
+  font-weight: 700;
+}
+.spopup .spa{
+  font-size: 18px;
+  text-align: center;
+}
+.spopup .s-btn{
+  margin-left: 165px;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #aaa;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.s-btn:hover{
+  opacity: 0.9;
+}
+.s-btn:active{
+  opacity: 0.6;
+}
+ /*end contact-us*/
+
 :root{
   --BG: #FEFAE0;
   --borde: #faedcd;
