@@ -445,7 +445,7 @@
 /*-------------------------------------------------------------------*/
 /*about us*/
 #h-body{
-    background-image: url('image/h-back.jpg');
+    background-image: url('../image/h-back.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -520,7 +520,7 @@ a{
     color: rgb(61, 82, 110);
     /*display: flex;
     justify-self: start;*/
-    list-style-image: url('image/h.gif');
+    list-style-image: url('../image/h.gif');
     margin-left:15px ;
     margin-left: 50px;
 
@@ -545,7 +545,7 @@ a{
 #h-no-2 a:hover{
     text-decoration: underline;
 }
-/*
+
 #h-no-3{
     color: white;
     margin-top: 5px;
@@ -566,7 +566,7 @@ a{
 #h-no-3 audio::-webkit-media-controls{
     color: white;
 }
-*/
+
 #h-no-4{
     width: 87%;
     background-color:rgba(0, 0, 0, 0.445) ;
