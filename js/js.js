@@ -278,7 +278,8 @@ function hide_ypopfed(){
     inputBox.value = list.innerHTML;
     resultsBox.innerHTML = '';
   }
-  
+
+
 //end search box
 //contact-us popup
 let spopup = document.getElementById("spopup");
