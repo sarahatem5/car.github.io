@@ -1,3 +1,13 @@
+/* seif var colors */
+:root{
+  --BG: #FEFAE0;
+  --borde: #faedcd;
+  --outline: #ccd5ae;
+  --btnC: #d4a373;
+  --tabel: #04aa6d;
+}
+/* seif var colors */
+
 /* S A L M A*/
 /*brands*/
 .s-name{
@@ -330,12 +340,7 @@
 }
  /*end contact-us*/
 
-:root{
-  --BG: #FEFAE0;
-  --borde: #faedcd;
-  --outline: #ccd5ae;
-  --btnC: #d4a373;
-  --tabel: #04aa6d;
+
 
   /*سارة حاتم محمد احمد العطار
 20230244*/
@@ -1184,14 +1189,6 @@ td {
 
 }
 
-.Jvideo {
-  /* width: auto; */
-  height: 290px;
-  /* position: absolute;
-  top: 460px;
-  right: 100px; */
-}
-
 .Jgallery {
   float: right;
   display: flex;
@@ -1323,6 +1320,7 @@ td {
 .Jgallery {
   position: static; 
   margin: 0; 
+  width: auto;
 }
 
 .Jvideo {
