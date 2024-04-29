@@ -210,7 +210,7 @@ function hcol1(x){
             document.getElementById("cc").innerHTML = "4.1sec";
             document.getElementById("dd").innerHTML = "177,890$";
         }
-        /* سما سيد عبداللطيف احمد*/
+        //سما سيد عبداللطيف احمد
         function ypop(){
     let x= confirm("do you want to call them");
     if (x) {
@@ -229,7 +229,6 @@ function  show_ypopfed(){
 function hide_ypopfed(){
     document.getElementById("ypopup").classList.remove("open");
 }
-        }
 
 //------------------------------------------------------------------------------------------------
 //search box
