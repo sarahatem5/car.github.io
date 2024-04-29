@@ -229,7 +229,7 @@ function  show_ypopfed(){
 function hide_ypopfed(){
     document.getElementById("ypopup").classList.remove("open");
 }
-
+    }
 //------------------------------------------------------------------------------------------------
 //search box
   let cars = [
