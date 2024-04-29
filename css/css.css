@@ -1094,9 +1094,7 @@ a{
   gap: 500px;
 }
 
-.Jtable,
-th,
-td {
+.Jtable,th,td {
   /* border: 2px solid rgb(83, 216, 83); */
   border-radius: 5px;
   margin-left: 28px;
@@ -1104,6 +1102,7 @@ td {
   margin: .5rem;
   margin-top: 90px;
 }
+/* ============================================================================================================ */
 /* .Jtr:hover{
   background-color: #04aa6d;
 } */
