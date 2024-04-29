@@ -1,4 +1,4 @@
-//  start seif
+  //  start seif
 function popup(){
     alert("sent successfully");
 }
@@ -214,7 +214,7 @@ function hcol1(x){
         function ypop(){
      let x= confirm("do you want to call them");
      if (x) {
-         Add code here to initiate the call
+        //  Add code here to initiate the call
          alert("sorry the number is not avilable");
      } else {
          alert("Call canceled.");
