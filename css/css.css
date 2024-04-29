@@ -361,15 +361,15 @@
   background-position: center;
 }
 
-#h-h-body table{
-  font-family: sans-serif;
-  ;
+.h-table{
+    font-family: sans-serif;
+    ;
 }
-#h-h-body th,td{
-  border:5px solid;
-  border-color: rgb(61, 72, 110);
-  border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.281)
+.h-table th,td{
+    border:5px solid;
+    border-color: rgb(61, 72, 110);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.281)
 }
 .h-ras{
   color: rgb(61, 72, 110);
