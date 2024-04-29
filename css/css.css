@@ -338,7 +338,7 @@
   --tabel: #04aa6d;
 }
 .ztopnav {
-     margin-right: 70px; 
+     /* margin-right: 70px;  */
     overflow: hidden;
     background-color: #333;
 }
@@ -685,20 +685,12 @@ a{
 
  
 
-*{
-  margin: 0; padding: 0;
-  box-sizing: border-box;
-  outline: none; border: none;
-  text-decoration: none;
-  transition: all .2s linear;
-  text-transform: capitalize;
- 
-}
-@media (max-width: 768px){
+
+/* @media (max-width: 768px){
   .Jmodels{
       grid-template-columns: auto;
   }
-  }
+  } */
   /*////////////////////////////// start of maintance center////////////////////////*/
   .y{
   background-image: url(../image/yground4.jpg);
@@ -1006,6 +998,8 @@ a{
 
  /*/////////////////////////////start seif////////////*/ 
 /* style for each brand page */
+
+
  
 
 .Jbody{
