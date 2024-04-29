@@ -365,7 +365,7 @@
     font-family: sans-serif;
     ;
 }
-.h-table th,td{
+.h-table, th,td{
     border:5px solid;
     border-color: rgb(61, 72, 110);
     border-radius: 15px;
