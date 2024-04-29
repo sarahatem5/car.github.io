@@ -119,7 +119,11 @@
       display: inline-block;
     }
     
-    a:hover, a:active {
+.Jbody a:hover, a:active {
+      background-color: var(--outline);
+      color: white;
+    }
+ .JJbody a:hover, a:active {
       background-color: var(--outline);
       color: white;
     }
