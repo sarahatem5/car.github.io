@@ -233,7 +233,6 @@ function hide_ypopfed(){
 
 //------------------------------------------------------------------------------------------------
 //search box
-document.addEventListener("DOMContentLoaded", function() {
   let cars = [
     'Porsche',
     'Ferrari',
@@ -280,7 +279,6 @@ document.addEventListener("DOMContentLoaded", function() {
     resultsBox.innerHTML = '';
   }
   
-});
 //end search box
 //contact-us popup
 let spopup = document.getElementById("spopup");
