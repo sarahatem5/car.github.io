@@ -701,7 +701,7 @@ a{
   }
   /*////////////////////////////// start of maintance center////////////////////////*/
   .y{
-  background-image: url(image/yground4.jpg);
+  background-image: url(../image/yground4.jpg);
  background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: scroll;
@@ -792,7 +792,7 @@ a{
   border-color: blueviolet;
   margin: 20px;
 }
-.ybrand{
+.ybrande{
   display: flex;
   display: inline-block;
    width: 250px;
@@ -802,12 +802,12 @@ a{
   size: 250px;
 
 }
-.ybrand a{
+.ybrande a{
   text-decoration: none;
   color: black;
   font-size: 19px;
 }
-.ybrand a:hover{
+.ybrande a:hover{
   color: rgb(59, 17, 99)
 }
 .ysmc{
