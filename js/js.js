@@ -233,55 +233,58 @@ function hide_ypopfed(){
 
 //------------------------------------------------------------------------------------------------
 //search box
-let cars = [
-  'Porsche',
-  'Ferrari',
-  'Aston Martin',
-  'BMW',
-  'Fiat',
-  'Nissan',
-  'Toyota',
-  'Mercedes',
-  'Lamborghini',
-  'Chevorlet',
-  'Audi',
-  'Hyundai',
-];
-
-const resultsBox = document.querySelector(".sresult-box");
-const inputBox = document.getElementById("sinput-box");
-
-inputBox.onkeyup = function(){
-  let result =[];
-  let input = inputBox.value;
-  if(input.length){
-    result = cars.filter((keyword)=>{
-      return keyword.toLowerCase().includes(input.toLowerCase());
-    });
-    console.log(result);
+document.addEventListener("DOMContentLoaded", function() {
+  let cars = [
+    'Porsche',
+    'Ferrari',
+    'Aston Martin',
+    'BMW',
+    'Fiat',
+    'Nissan',
+    'Toyota',
+    'Mercedes',
+    'Lamborghini',
+    'Chevorlet',
+    'Audi',
+    'Hyundai',
+  ];
+  
+  const resultsBox = document.querySelector(".sresult-box");
+  const inputBox = document.getElementById("sinput-box");
+  
+  inputBox.onkeyup = function(){
+    let result =[];
+    let input = inputBox.value;
+    if(input.length){
+      result = cars.filter((keyword)=>{
+        return keyword.toLowerCase().includes(input.toLowerCase());
+      });
+      console.log(result);
+    }
+    display(result);
+    if(!result.length){
+      resultsBox.innerHTML = '';
+    }
   }
-  display(result);
-  if(!result.length){
+  function display(result){
+    const content = result.map((list)=>{
+      return "<li onclick=redirectToPage('" + list + "')>" + list +"</li>";
+    });
+  
+    resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>";
+  }
+  function redirectToPage(selectedItem){
+    const pageName = selectedItem.toLowerCase().replace(/\s/g, '') + '.html';
+    window.location.href = pageName;
+    inputBox.value = list.innerHTML;
     resultsBox.innerHTML = '';
   }
-}
-function display(result){
-  const content = result.map((list)=>{
-    return "<li onclick=redirectToPage('" + list + "')>" + list +"</li>";
-  });
-
-  resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>";
-}
-function redirectToPage(selectedItem){
-  const pageName = selectedItem.toLowerCase().replace(/\s/g, '') + '.html';
-  window.location.href = pageName;
-  inputBox.value = list.innerHTML;
-  resultsBox.innerHTML = '';
-}
+  
+});
 //end search box
 //contact-us popup
 let spopup = document.getElementById("spopup");
-let form = document.querySelector("form");
+let form = document.getElementById("sform");
 function sopenPopup (event){
   event.preventDefault(); 
   spopup.classList.add("sopen-popup");
@@ -291,6 +294,7 @@ function sclosePopup (){
 } 
 form.addEventListener("submit", sopenPopup); 
 //end contact-us popup
+
 
 //------------------------------------------------------------------------------------------------
 //زياد أحمد صلاح الدين 20230226
