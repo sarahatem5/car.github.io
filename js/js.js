@@ -275,8 +275,8 @@ document.addEventListener("DOMContentLoaded", function(){
   function redirectToPage(selectedItem){
     const pageName = selectedItem.toLowerCase().replace(/\s/g, '') + '.html';
     window.location.href = pageName;
-    //inputBox.value = list.innerHTML;
-    //resultsBox.innerHTML = '';
+    inputBox.value = list.innerHTML;
+    resultsBox.innerHTML = '';
   }
 //end search box
 //contact-us popup
