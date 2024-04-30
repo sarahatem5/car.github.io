@@ -290,7 +290,9 @@ function sopenPopup (event){
 function sclosePopup (){
   spopup.classList.remove("sopen-popup");
 } 
-form.addEventListener("submit", sopenPopup); 
+form.addEventListener("submit", function(event) {
+  sopenPopup(event);
+}); 
 //end contact-us popup
 
 
