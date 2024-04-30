@@ -191,6 +191,108 @@
     <ul id="results" class="search-results"></ul>
 </div>
 <button onclick="toggleDarkMode()" class="lg"> Dark Mode</button>
-<script src="js/js.js"> </script>
+<script > 
+	function samar(){
+    varx=document.getElementById("lma");
+    if(X.type==="password"){
+        x.type="text";
+
+    }
+    else{ x.type="password";}
+
+}
+function search() {
+              
+    var query = document.getElementById('searchInput').value.toLowerCase();
+
+   
+    var items = document.querySelectorAll('.i');
+
+    
+    items.forEach(function(item) {
+        var text = item.textContent.toLowerCase();
+        if (text.includes(query)) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none'; 
+        }
+    });
+}
+
+
+
+
+
+
+
+const searchInput = document.getElementById('searchInput');
+    const resultsList = document.getElementById('results');
+// sama abd el naser end
+
+    const data = [ 
+        { name: '2025 Aston Martin Vantage facelift(36,979)', link: 'https://www.youtube.com/watch?v=zgJKpWMFsjY' },
+        { name: 'ferrari laFerrari', link: 'ferrari laFerrari.html' },
+        { name: 'ferrari_sf90', link: 'ferrari_sf90.html' },
+        { name: 'ferrari_488_psita', link: 'ferrari_488psita.html' },
+        { name: 'lambo_avents', link: 'lambo_avents.html' },
+        { name: 'porsche_carreragt', link: 'porsche_carreragt.html' },
+        { name: 'ferrari_296gts', link: 'ferrari_296gts.html' },
+        { name: 'astonemartin_dbsV', link: 'astonemartin_dbsV.html' },
+        { name: 'porsche_911turbo', link: 'porsche_911turbo.html' },
+        { name: 'porsche_718boxter', link: 'porsche_718boxter.html' },
+        { name: 'porsche_Cayenne_gts', link: 'porsche_Cayenne_gts.html' },
+        { name: 'lambo-gallardo', link: 'lambo-gallardo.html' },
+        { name: 'bmw_m5cs.html', link: 'bmw_m5cs.html' },
+        { name: 'porsche_taycan_turbogt', link: 'porsche_taycan_turbogt.html' },
+        { name: 'astonmartin_dbx707', link: 'astonmartin_dbx707.html' },
+        { name: 'astonmartin_db12', link: 'astonmartin_db12.html' },
+        { name: 'astonmartin_db11', link: 'astonmartin_db11.html' },
+        { name: 'ferrari-roma', link: 'ferrari-roma.html' },
+        { name: 'porsche_911gt2_rs', link: 'porsche_911gt2_rs.html' },
+        { name: 'lambo_hurcan_evoS', link: 'lambo_hurcan_evoS.html' },
+        { name: 'lambo_urus.html', link: 'lambo_urus.html' }
+    ];
+
+   
+    function search(query) {
+       
+        resultsList.innerHTML = '';
+       
+        const filteredData = data.filter(item => item.name.toLowerCase().includes(query.toLowerCase()));
+       
+        filteredData.forEach(item => {
+            const listItem = document.createElement('li');
+            const link = document.createElement('a');
+            link.textContent = item.name;
+            link.href = item.link;
+            // Open the link in a new tab
+            link.target = '_blank';
+            listItem.appendChild(link);
+            resultsList.appendChild(listItem);
+        });
+       
+        if (query) {
+            resultsList.style.display = 'block';
+        } else {
+            resultsList.style.display = 'none';
+        }
+    }
+
+   
+    searchInput.addEventListener('input', function() {
+        search(this.value);
+    });
+
+    
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.search-container')) {
+            resultsList.style.display = 'none';
+        }
+    });
+
+    function  toggleDarkMode() {
+        const body = document.querySelector('.final');
+        body.classList.toggle('lll');}
+</script>
 </body>
 </html>
