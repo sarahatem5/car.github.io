@@ -233,70 +233,65 @@ function hcol1(x){
 //------------------------------------------------------------------------------------------------
 //search box
 document.addEventListener("DOMContentLoaded", function(){ 
-    let cars = [
-        'Porsche',
-        'Ferrari',
-        'Aston Martin',
-        'BMW',
-        'Fiat',
-        'Nissan',
-        'Toyota',
-        'Mercedes',
-        'Lamborghini',
-        'Chevorlet',
-        'Audi',
-        'Hyundai',
-    ];
+  let cars = [
+  'Porsche',
+  'Ferrari',
+  'Aston Martin',
+  'BMW',
+  'Fiat',
+  'Nissan',
+  'Toyota',
+  'Mercedes',
+  'Lamborghini',
+  'Chevorlet',
+  'Audi',
+  'Hyundai',
+];
+const resultsBox = document.querySelector(".sresult-box");
+const inputBox = document.getElementById("sinput-box");
+inputBox.onkeyup = function(){
+  let result =[];
+  let input = inputBox.value;
+  if(input.length){
+    result = cars.filter((keyword)=>{
+      return keyword.toLowerCase().includes(input.toLowerCase());
+    });
+    console.log(result);
+  }
+  display(result);
+  if(!result.length){
+    resultsBox.innerHTML = '';
+  }
+}
+function display(result){
+  const content = result.map((list)=>{
+    return "<li onclick=redirectToPage('" + list + "')>" + list +"</li>";
+  });
 
-    const resultsBox = document.querySelector(".sresult-box");
-    const inputBox = document.getElementById("sinput-box");
+  resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>";
+}
+function redirectToPage(selectedItem){
+  const pageName = selectedItem.toLowerCase().replace(/\s/g, '') + '.html';
+  window.location.href = pageName;
+  inputBox.value = list.innerHTML;
+  resultsBox.innerHTML = '';
+}
+});
 
-    inputBox.onkeyup = function(){
-        let result =[];
-        let input = inputBox.value;
-        if(input.length){
-            result = cars.filter((keyword)=>{
-                return keyword.toLowerCase().includes(input.toLowerCase());
-            });
-            console.log(result);
-        }
-        display(result);
-        if(!result.length){
-            resultsBox.innerHTML = '';
-        }
-    }
-
-    function display(result){
-        const content = result.map((list)=>{
-            return "<li onclick=redirectToPage('" + list + "')>" + list +"</li>";
-        });
-
-        resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>";
-    }
-
-    function redirectToPage(selectedItem){
-        const pageName = selectedItem.toLowerCase().replace(/\s/g, '') + '.html';
-        window.location.href = pageName;
-        inputBox.value = list.innerHTML;
-        resultsBox.innerHTML = '';
-    }
- });
-
-    //end search box
-    //contact-us popup
-    let spopup = document.getElementById("spopup");
-    let form = document.getElementById("sform");
-    function sopenPopup (event){
-        event.preventDefault(); 
-        spopup.classList.add("sopen-popup");
-    }
-    function sclosePopup (){
-        spopup.classList.remove("sopen-popup");
-    } 
-    form.addEventListener("submit", function(event) {
-        sopenPopup(event);
-    }); 
-    //end contact-us popup
+//end search box
+//contact-us popup
+let spopup = document.getElementById("spopup");
+let form = document.getElementById("sform");
+function sopenPopup (event){
+    event.preventDefault(); 
+     spopup.classList.add("sopen-popup");
+}
+function sclosePopup (){
+     spopup.classList.remove("sopen-popup");
+} 
+form.addEventListener("submit", function(event) {
+      sopenPopup(event);
+}); 
 
 //end contact-us popup
 
