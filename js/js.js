@@ -280,6 +280,7 @@ document.addEventListener("DOMContentLoaded", function(){
         inputBox.value = list.innerHTML;
         resultsBox.innerHTML = '';
     }
+ });
 
     //end search box
     //contact-us popup
@@ -296,7 +297,6 @@ document.addEventListener("DOMContentLoaded", function(){
         sopenPopup(event);
     }); 
     //end contact-us popup
-});
 
 //end contact-us popup
 
