@@ -232,7 +232,6 @@ function hcol1(x){
     }
 //------------------------------------------------------------------------------------------------
 //search box
-document.addEventListener("DOMContentLoaded", function(){ 
   let cars = [
   'Porsche',
   'Ferrari',
@@ -276,7 +275,6 @@ function redirectToPage(selectedItem){
   inputBox.value = list.innerHTML;
   resultsBox.innerHTML = '';
 }
-});
 
 //end search box
 //contact-us popup
