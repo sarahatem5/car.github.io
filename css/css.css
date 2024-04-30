@@ -1,5 +1,5 @@
 /* seif var colors */
- :root{ 
+:root{ 
   --BG: #FEFAE0;
   --borde: #faedcd;
   --outline: #ccd5ae;
@@ -163,15 +163,6 @@
   gap: 500px;
 }
 
-.Jtable,th,td {
-  /* border: 2px solid rgb(83, 216, 83); */
-  border-radius: 5px;
-  margin-left: 28px;
-  padding: .5rem;
-  margin: .5rem;
-  margin-top: 90px;
-}
-/* ============================================================================================================ */
 /* .Jtr:hover{
   background-color: #04aa6d;
 } */
@@ -212,6 +203,14 @@
   background-color: var(--BG);
   box-shadow:  0 6px 8px rgba(0, 0, 0, 0.1);
 }
+.Jtable,#Jth,#Jtd {
+  /* border: 2px solid rgb(83, 216, 83); */
+  border-radius: 6px;
+  margin-left: 28px;
+  padding: .5rem;
+  margin: .5rem;
+  margin-top: 90px;
+}
 
 .Jtable {
   /* border: solid #ffffff; */
@@ -222,14 +221,20 @@
   top: 500px;
 }
 
-.JJbody th {
+.JJbody #Jth {
   background-color: var(--tabel);
+  border-radius: 6px;
   color: white;
 }
 
-.JJbody th,td {
-  border: 0.5px solid var(--tabel);
+.JJbody #Jth, #Jtd {
+  border: 1px solid var(--tabel);
+  border-radius: 6px;
 }
+#Jtr:hover{
+  background-color: var(--btnC); 
+} 
+
 
 .Jprice {
   text-align: center;
@@ -440,8 +445,8 @@ li{
 
 /* end css for each model page */
 
+/*/////////////////////////////end seif////////////*/
 
-/*/////////////////////////////end seif////////////*/ 
 /* S A L M A*/
 /*brands*/
 .s-name{
@@ -1057,7 +1062,8 @@ a{
     width: 80px;
     background: linear-gradient(to bottom right,  rgb(61, 72, 110),  rgb(61, 72, 110), rgb(81, 105, 148),  rgb(61, 72, 110),  rgb(61, 72, 110)) ;
     color: aliceblue;
-    border-radius: 15px;l}
+    border-radius: 15px;
+  }
     /*---------------------------------------------------------------------------------------------------------------------*/
     
 
