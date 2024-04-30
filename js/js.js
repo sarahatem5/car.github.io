@@ -231,6 +231,22 @@ function hcol1(x){
  }     
     }
 //------------------------------------------------------------------------------------------------
+//contact-us popup
+let spopup = document.getElementById("spopup");
+let form = document.getElementById("sform");
+   function sopenPopup(event) {
+        event.preventDefault();
+        spopup.classList.add("sopen-popup");
+   }
+   function sclosePopup() {
+        spopup.classList.remove("sopen-popup");
+   }
+
+    form.addEventListener("submit", function(event) {
+        sopenPopup(event);
+    });
+//end contact-us popup
+
 //search box
   let cars = [
   'Porsche',
@@ -277,21 +293,6 @@ function redirectToPage(selectedItem){
 }
 
 //end search box
-//contact-us popup
-let spopup = document.getElementById("spopup");
-let form = document.getElementById("sform");
-   function sopenPopup(event) {
-        event.preventDefault();
-        spopup.classList.add("sopen-popup");
-   }
-   function sclosePopup() {
-        spopup.classList.remove("sopen-popup");
-   }
-
-    form.addEventListener("submit", function(event) {
-        sopenPopup(event);
-    });
-//end contact-us popup
 
 
 //------------------------------------------------------------------------------------------------
