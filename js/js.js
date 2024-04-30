@@ -210,25 +210,7 @@ function hcol1(x){
             document.getElementById("cc").innerHTML = "4.1sec";
             document.getElementById("dd").innerHTML = "177,890$";
         }
-        //سما سيد عبداللطيف احمد
-        function ypop(){
-     let x= confirm("do you want to call them");
-     if (x) {
-        //  Add code here to initiate the call
-         alert("sorry the number is not avilable");
-     } else {
-         alert("Call canceled.");
-     }
- }
- function ypopfed() {
-         show_ypopfed();
- }
- function  show_ypopfed(){
-     document.getElementById("ypopup").classList.add("open");
- }
- function hide_ypopfed(){
-     document.getElementById("ypopup").classList.remove("open");
- }     
+            
     }
 //------------------------------------------------------------------------------------------------
 //contact-us popup
@@ -408,7 +390,10 @@ const searchInput = document.getElementById('searchInput');
         const body = document.querySelector('.final');
         body.classList.toggle('lll');}
 // سما سيد عبد اللطيف احمد
-let ymodels = {
+
+
+function update() {
+  let ymodels = {
     Ferrari: ["Exotic cars service"],
     Porshe: ["Ghabbour", "German service", "Esotica"],
     AstoneMartin: ["Ezz elarab(Al Agouzah)", "Ezz(Abu Rawash)", "Esotica"],
@@ -422,8 +407,6 @@ let ymodels = {
     Nissan: ["Ezz elarab(Al Agouzah)", "Ezz(Abu Rawash)", "German service", "Ghabbour"],
     Toyota: ["Ezz elarab(Al Agouzah)", "Ezz(Abu Rawash)", "Esotica", "German service", "Bavarian", "Al Handasyia al masrya", "Exotic cars service"]
 };
-
-function update() {
     let ybrands = document.getElementById("ybrand").value;
     let ymodl = document.getElementById("ymodle");
     ymodl.innerHTML = "<option value=''>Select Maintenance Center</option>";
@@ -516,10 +499,10 @@ else if (ybrands === "Toyota") {
 
 }
 
-document.getElementById("ysearchForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent default form submission
-    ys();
-});
+// document.getElementById("ysearchForm").addEventListener("submit", function(event) {
+//     event.preventDefault(); // Prevent default form submission
+//     ys();
+// });
 
 function ys() {
     let selectedCenter = document.getElementById("ymodle").value;
@@ -554,3 +537,21 @@ function ys() {
 }
 
 window.onload = update;
+        function ypop(){
+     let x= confirm("do you want to call them");
+     if (x) {
+        //  Add code here to initiate the call
+         alert("sorry the number is not avilable");
+     } else {
+         alert("Call canceled.");
+     }
+ }
+ function ypopfed() {
+         show_ypopfed();
+ }
+ function  show_ypopfed(){
+     document.getElementById("ypopup").classList.add("open");
+ }
+ function hide_ypopfed(){
+     document.getElementById("ypopup").classList.remove("open");
+ }
