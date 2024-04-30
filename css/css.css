@@ -102,8 +102,8 @@
 .Jmodels .Jcars .Jcar .Jimage{
   height: 400px;
   width: 300px;
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
-  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  object-fit: cover; 
+  max-width: 100%; 
 }
 .Jmodels .Jcars .Jcar:hover .Jimage{
   transform: scale(.9);
@@ -371,11 +371,11 @@
 @media only screen and (max-width: 1400px) {
   
 .Jimg{
-  max-width: 100%; /* Ensures image doesn't exceed container width */
-  height: auto; /* Maintains aspect ratio */
-  width: auto; /* Allows the image to shrink */
-  display: block; /* Ensures proper rendering */
-  margin: 0 auto; /* Centers the image horizontally */
+  max-width: 100%; 
+  height: auto; 
+  width: auto; 
+  display: block;
+  margin: 0 auto; 
 }
 
 .JJbody {
@@ -414,7 +414,7 @@
 
 .Jform {
   float: none;
-  margin-top: 20px; /* Add space below the form */
+  margin-top: 20px; 
 }
 
 .Jlist {
