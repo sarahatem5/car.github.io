@@ -542,7 +542,7 @@ li{
 .ssearch-box{
 	width: 600px;
 	background: #fff;
-  margin-left: 350px;
+        margin-left: 350px;
 	border-radius: 6px;
 }
 .srow{
@@ -580,8 +580,8 @@ li{
 }
 .sresult-box ul li{
 	list-style: none;
-  font-family: sans-serif;
-  font-size: 20px;
+        font-family: sans-serif;
+        font-size: 20px;
 	border-radius: 3px;
 	padding: 15px 10px;
 }
