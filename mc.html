@@ -43,7 +43,7 @@
         <p>Name : Sama sayed abdel atif ahmed</p>
         <p>ID : 20230261</p>
       </div>
-     <form id="ysearchForm">
+     <form id="ysearchForm" onsubmit="event.preventDefault(); ys();">
         <label for="brand" class="ylabel" >Choose Brand</label>
         <select name="Brand" id="ybrand" onchange="update()">
             <option selected disabled value="">Select Brand</option>
