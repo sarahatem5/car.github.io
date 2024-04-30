@@ -1634,3 +1634,178 @@ color :#fff;
 display: block;
 font-size: 18px;
 }
+/* ******************************sama 20230263 ***************************** */
+       
+        .final{
+            font-family: Arial, sans-serif;
+            background-color: #0e8bb4;
+            margin: 0;
+            padding: 20px;
+        }
+    
+        
+        .ll {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .lion {
+            padding: 8px 16px;
+            /* background-color: #a2bad3; */
+            background-color: white;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .lion:hover {
+            background-color: #0056b3;
+        }
+        #liona{background-color: #b6b8c4;
+            color: #fff;}
+        
+.lol{position:absolute;padding-bottom: 20px;left: 1100px;top:1500px;}
+lara{padding-bottom: 300px;}
+table {
+        border-collapse: collapse;
+        padding-right: 500px; margin-left: 10px;padding-bottom: 100px;
+       
+    }
+    .i {
+        border: 1px solid #faf7f7;
+        text-align: left;
+        padding: 8px;
+        
+    }
+    .lela{width: 100px;}
+    
+    .lary{position: absolute;top:900px;right: 100px;padding-bottom: 0px;display: block;
+            margin-bottom: 10px;width:400px ;height: 300px;}  
+    .lad{font-size: 30px;position: absolute;top:563px;right: 450px; color: #0056b3; 
+            }
+   .lara{position: absolute;top:900px;left:70px;
+    padding-top: 100px;padding-bottom: 30px; padding-left: 100px;
+    width: 50%;
+            height: 400px;
+            border: none;
+            margin-bottom: 20px;}
+            .liz{ 
+              background-image: url("images/lback.PNG");
+             background-size:cover;
+             background-repeat:no-repeat ;
+             background-attachment: fixed;
+             }
+              .ll{text-align: center;
+                  color:aliceblue;
+          font-size:larger;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      padding-bottom: 10px;}
+      
+       .loz {
+        width:450px;border: 2px solid rgb(23, 21, 21); border-radius: 12px;
+                  padding: 5px;
+        height: 300px;
+       padding-top:20px;
+       padding-bottom: 20px;
+        margin: auto;
+        background-color: rgba(23, 22, 22,0.1);
+      }.s{
+                 text-align: right; 
+      } 
+      .final a:link {
+        color: rgb(114, 92, 92);
+        background-color: transparent;
+        text-decoration: none;
+      }
+      .final a:visited {
+        color: rgb(8, 8, 8);
+        background-color: transparent;
+        text-decoration: none;
+      }
+      .final a:hover {
+        color: rgb(41, 118, 77);
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      .final a:active {
+        color: blue;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      .lam{padding-left: 230;
+        font-size: large;
+      }
+      .lio{padding-bottom: 10px;
+        padding-top: 10px;margin-top: 10px;
+        font-size: large;
+      }
+      #lc{padding-right: 5px;}
+      #lma{padding-left: 45px;  margin-bottom: 0px;padding-bottom: 0;}
+      #lama{padding-left: 80px;}
+      #lamas{ padding-left: 35;}
+      #les{padding-right: 35;}
+      #lesma{padding-right: 35;}
+      #lesmaa{width: 200px; padding-bottom: 0; }
+      #lesmaar{padding-right: 34px;}
+      .lon{color:gray; font-size: 60px}
+      .meme{padding-left: 70px;}
+      
+      .bab{  position: absolute;top:1220px;right: 140px; }
+      .mrmr{ margin-top: 40px;} 
+      .ld{ position: absolute;top:140px; left:90px; padding-bottom: 1000px;} 
+      .search-container{position: absolute;top:100px; left:100px; padding-bottom: 1000px; }
+      .lx{ width: 250px; height: 20px; position: absolute;top:5px; left:100px;}
+.lxo{  position: absolute;top:5px; left:370px;height: 25px;}
+.search-container {
+  position: absolute;top: 90px; left:300px;
+}
+
+
+#searchInput {
+  padding: 8px 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 250px;
+}
+
+
+.search-results {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+
+.search-results li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+
+.search-results li:hover {
+  background-color: #f2f2f2;
+}
+
+
+.lll { background-color: black; 
+  color:black; 
+  p {color:  #333;}
+  
+   button{ background-color:  #333;}
+}
+.lg{ position: absolute;top:100px; left: 150px;}
+ 
+  /* ******************************sama 20230263 ***************************** */
