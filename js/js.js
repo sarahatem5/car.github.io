@@ -406,3 +406,150 @@ const searchInput = document.getElementById('searchInput');
     function  toggleDarkMode() {
         const body = document.querySelector('.final');
         body.classList.toggle('lll');}
+// سما سيد عبد اللطيف احمد
+let ymodels = {
+    Ferrari: ["Exotic cars service"],
+    Porshe: ["Ghabbour", "German service", "Esotica"],
+    AstoneMartin: ["Ezz elarab(Al Agouzah)", "Ezz(Abu Rawash)", "Esotica"],
+    Lamborghni: ["Esotica", "Exotic cars service"],
+    Audi: ["Ezz elarab(Al Agouzah)", "Ezz(Abu Rawash)", "German service"],
+    BMW: ["Bavarian", "Ghabbour", "German cars service"],
+    Chevrolet: ["Ezz elarab(Al Agouzah)", "Ezz(Abu Rawash)", "Esotica", "Ghabbour", "German service", "Bavarian", "Al Handasyia al masrya"],
+    Fiat: ["Ezz elarab(Al Agouzah)", "Ezz(Abu Rawash)", "German service", "Al Handasyia al masrya", "Ghabbour"],
+    Mercedes: ["Esotica", "Ghabbour", "Bavarian", "German service", "Al Handasyia al masrya"],
+    Hyundai: ["Ezz elarab(Al Agouzah)", "Ezz(Abu Rawash)", "Esotica", "German service", "Bavarian", "Al Handasyia al masrya", "Exotic cars service"],
+    Nissan: ["Ezz elarab(Al Agouzah)", "Ezz(Abu Rawash)", "German service", "Ghabbour"],
+    Toyota: ["Ezz elarab(Al Agouzah)", "Ezz(Abu Rawash)", "Esotica", "German service", "Bavarian", "Al Handasyia al masrya", "Exotic cars service"]
+};
+
+function update() {
+    let ybrands = document.getElementById("ybrand").value;
+    let ymodl = document.getElementById("ymodle");
+    ymodl.innerHTML = "<option value=''>Select Maintenance Center</option>";
+
+
+if(ybrands === "Ferrari"){
+    for(let i=0 ;i< ymodels.Ferrari.length ; i++){
+        let option = document.createElement("option");
+        option.text = ymodels.Ferrari[i];
+        ymodl.add(option);
+    }
+}
+else if (ybrands === "Porshe"){
+    for(let i=0 ;i< ymodels.Porshe.length ; i++){
+        let option = document.createElement("option");
+        option.text = ymodels.Porshe[i];
+        ymodl.add(option);
+    }
+}
+ else if(ybrands === "AstoneMartin"){
+    for(let i=0 ;i< ymodels.AstoneMartin.length ; i++){
+        let option = document.createElement("option");
+        option.text = ymodels.AstoneMartin[i];
+        ymodl.add(option);
+    }
+}
+else if(ybrands === "Lamborghni"){
+    for(let i=0 ;i< ymodels.Lamborghni.length ; i++){
+        let option = document.createElement("option");
+        option.text = ymodels.Lamborghni[i];
+        ymodl.add(option);
+    }
+}
+else if(ybrands === "BMW"){
+    for(let i=0 ;i< ymodels.BMW.length ; i++){
+        let option = document.createElement("option");
+        option.text = ymodels.BMW[i];
+        ymodl.add(option);
+    }
+}
+else if(ybrands === "Audi"){
+    for(let i=0 ;i<  ymodels.Audi.length ; i++){
+        let option = document.createElement("option");
+        option.text = ymodels.Audi[i];
+        ymodl.add(option);
+    }
+}
+else if(ybrands === "Chevrolet"){
+    for(let i=0 ;i<  ymodels.Chevrolet.length ; i++){
+        let option = document.createElement("option");
+        option.text = ymodels.Chevrolet[i];
+        ymodl.add(option);
+    }
+}
+else if(ybrands === "Fiat"){
+    for(let i=0 ;i< ymodels.Fiat.length ; i++){
+        let option = document.createElement("option");
+        option.text = ymodels.Fiat[i];
+        ymodl.add(option);
+    }
+}
+else if(ybrands === "Mercedes"){
+    for(let i=0 ;i< ymodels.Mercedes.length ; i++){
+        let option = document.createElement("option");
+        option.text = ymodels.Mercedes[i];
+        ymodl.add(option);
+    }
+}
+else if(ybrands === "Hyundai"){
+    for(let i=0 ;i< ymodels.Hyundai.length ; i++){
+        let option = document.createElement("option");
+        option.text = ymodels.Hyundai[i];
+        ymodl.add(option);
+    }
+}
+else if(ybrands === "Nissan"){
+    for(let i=0 ;i< ymodels.Nissan.length ; i++){
+        let option = document.createElement("option");
+        option.text = ymodels.Nissan[i];
+        ymodl.add(option);
+    }
+}
+else if (ybrands === "Toyota") {
+    for(let i=0 ;i< ymodels.Toyota.length ; i++){
+        let option = document.createElement("option");
+        option.text = ymodels.Toyota[i];
+        ymodl.add(option);
+    }
+}
+
+}
+
+document.getElementById("ysearchForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+    ys();
+});
+
+function ys() {
+    let selectedCenter = document.getElementById("ymodle").value;
+    switch (selectedCenter) {
+        case "Exotic cars service":
+            location.href = "esc.html";
+            break;
+        case "Ghabbour":
+            location.href = "ghabbor.html";
+            break;
+        case "German service":
+            location.href = "GSC.html";
+            break;
+        case "Esotica":
+            location.href = "es.html";
+            break;
+        case "Ezz elarab(Al Agouzah)":
+            location.href = "ezzAgouzah.html";
+            break;
+        case "Ezz(Abu Rawash)":
+            location.href = "ezzRawash.html";
+            break;
+        case "Bavarian":
+            location.href = "ba.html";
+            break;
+        case "Al Handasyia al masrya":
+            location.href = "ma.html";
+            break;
+        default:
+            alert("Please select a maintenance center!");
+    }
+}
+
+window.onload = update;
