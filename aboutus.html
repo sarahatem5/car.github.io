@@ -9,6 +9,51 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>about us</title>
+
+
+	<style>
+    .h-search-container {
+        position: relative;
+      }
+      
+      /* Styling for the search input */
+      #h-searchInput {
+        padding: 8px 12px;
+        border: 2px solid #000000;
+        border-radius: 4px;
+        font-size: 16px;
+        width: 250px;
+      }
+      
+      /* Styling for the search results */
+      .h-search-results {
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 10%;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        background-color: #000000;
+        border: 2px solid #000000;
+        border-top: none;
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1000;
+        margin-left: 620px;
+      }
+      
+      /* Styling for individual search results */
+      .h-search-results li {
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+      
+      /* Styling for selected search result */
+      .h-search-results li:hover {
+        background-color: #7e7e7e;
+      }</style>
 </head>
 <body id="h-body">
     <a href="index.html" class="zimage1">
@@ -36,6 +81,12 @@
     <center>
     <div id="h-no-1">
         <h1 class="h-h1">about us</h1>
+	     <!--search-->
+        <div class="h-search-container">
+            <input type="text" id="h-searchInput" placeholder="Search...">
+            <ul id="h-results" class="h-search-results"></ul>
+        </div>
+        <!----------------------------->
         <div class="h-info" id="h-aa">
         <img src="image/h-4.jpg" alt="sara">
         
@@ -206,6 +257,59 @@
                <br>
                <p class="h-me" style="padding-top: 30px; padding-left: 95px;">20230244</p>
 	<script src="js/js.js"></script>
-        
+
+
+	<script>
+    const searchInput = document.getElementById('h-searchInput');
+    const resultsList = document.getElementById('h-results');
+
+    // Sample data (can be replaced with your own)
+    const data = [ 
+        { name: 'sara hatem', link: 'comparison.html' },
+        { name: 'sama abd el-nasser', link: 'Price.html' },
+        { name: 'salma essam', link: 'brands.html' },
+        { name: 'sama sayed', link: 'mc.html' },
+        { name: 'sama mohamed', link: 'BS.html' },
+        { name: 'sief saadeany', link: 'porsche.html' },
+        { name: 'zyad salah', link: 'index.html' },
+    ];
+
+    // Function to perform search
+    function search(query) {
+        // Clear previous results
+        resultsList.innerHTML = '';
+        // Filter data based on query
+        const filteredData = data.filter(item => item.name.toLowerCase().includes(query.toLowerCase()));
+        // Display filtered results
+        filteredData.forEach(item => {
+            const listItem = document.createElement('li');
+            const link = document.createElement('a');
+            link.textContent = item.name;
+            link.href = item.link;
+            // Open the link in a new tab
+            link.target = '_blank';
+            listItem.appendChild(link);
+            resultsList.appendChild(listItem);
+        });
+        // Show or hide the results container based on query
+        if (query) {
+            resultsList.style.display = 'block';
+        } else {
+            resultsList.style.display = 'none';
+        }
+    }
+
+    // Event listener for input change
+    searchInput.addEventListener('input', function() {
+        search(this.value);
+    });
+
+    // Event listener to close results when clicking outside the search container
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.search-container')) {
+            resultsList.style.display = 'none';
+        }
+    });
+</script>
 </body>
 </html>
