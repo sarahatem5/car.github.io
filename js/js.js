@@ -278,15 +278,12 @@ function redirectToPage(selectedItem){
 
 //end search box
 //contact-us popup
-document.addEventListener("DOMContentLoaded", function() {
-    let spopup = document.getElementById("spopup");
-    let form = document.getElementById("sform");
-
+ let spopup = document.getElementById("spopup");
+ let form = document.getElementById("sform");
     function sopenPopup(event) {
         event.preventDefault();
         spopup.classList.add("sopen-popup");
     }
-
     function sclosePopup() {
         spopup.classList.remove("sopen-popup");
     }
@@ -294,7 +291,6 @@ document.addEventListener("DOMContentLoaded", function() {
     form.addEventListener("submit", function(event) {
         sopenPopup(event);
     });
-});
 //end contact-us popup
 
 
