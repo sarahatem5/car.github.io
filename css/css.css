@@ -217,8 +217,9 @@
 
 .Jtable {
   /* border: solid #ffffff; */
+  position: relative;
   float: left;
-  width: 800px;
+  width: 750px;
   height: 500px;
   position: absolute;
   top: 500px;
@@ -370,8 +371,22 @@
 
 
 /* Responsive styles */
+@media only screen and (min-width: 1201px) and (max-width: 1400px){
 
-@media only screen and (max-width: 1400px) {
+  .Jgallery{
+    width: 500px;
+  }
+  .Jtable {
+   position: absolute;
+   width: 650px;
+}
+.Jifram{
+  margin-top: 50px;
+}
+
+}
+
+@media only screen and (max-width: 1200px) {
   
 .Jimg{
   max-width: 100%; 
@@ -395,7 +410,7 @@
 .Jgallery {
   position: static; 
   margin: 0; 
-  width: auto;
+  width: 100%;
 }
 
 .Jvideo {
@@ -1856,3 +1871,185 @@ lara{padding-bottom: 300px;}
 .lg{ position: absolute;top:100px; left: 150px;}
  .lu { background-color:  white;}
   /* ******************************sama 20230263 ***************************** */
+
+
+  /* sama mohamed */
+  .body-0 {
+
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 109vh;
+}
+
+.all-0 {
+    padding: 0 10px 30px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px 18px;
+}
+
+.heading-0 {
+    background-color: rgb(128, 57, 57);
+    color: white;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.heading-0>h1 {
+    letter-spacing: 11px;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.heading-0>h3 {
+    letter-spacing: 7px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.car_items-0 {
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: wheat;
+}
+
+.car_items-0 img {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    border-radius: 10px;
+}
+
+.h1-0 {
+    grid-column: 1/-1;
+    text-align: center;
+    animation: slide 1.6s ease-in-out forwards;
+    text-transform: uppercase;
+}
+
+.details-0{
+    display: grid;
+    padding: 20px 10px;
+    grid-row-gap: 10px;
+    grid-template-rows: auto 1fr 45px;
+}
+
+.details_more-0 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.details_more-0>h3 {
+    font-weight: 500px;
+    font-size: 20px;
+}
+
+.price-0 {
+    text-align: right;
+    position: relative;
+    bottom: 20px;
+}
+.details-0>p {
+    color: gray;
+    margin-bottom: 10px;
+    align-self: stretch;
+    font-size: 14px;
+    letter-spacing: 1.1;
+}
+.bar-0 {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+}
+
+.bar-0 nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bar-0 nav ul li {
+    display: inline;
+}
+
+.bar-0 nav ul li a {
+    display: inline-block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    opacity: 1;
+    color: rgb(128, 57, 57);
+}
+
+
+.footer{
+    background-color: black;
+}
+
+.footer_container {
+    width: 100%;
+    padding: 20px 10px 20px;
+    height: 30px;
+}
+
+
+.footer_home {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.footer_home ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer_home ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+    transition: 0.5s;
+}
+.footer_bottom {
+    color: white;
+    font-size: 11px;
+    font-weight: 600px;
+    padding: 10px 10px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.footer_bottom p {
+    letter-spacing: 1.6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+.video-container {
+    position: relative;
+    width: 70%;
+    height: 75vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 75%;
+    margin-left: 340px;
+    object-fit: cover; 
+  }
+
+    /* sama mohamed */
