@@ -274,6 +274,7 @@
   margin: 5px;
   width: 680px;
   margin-right: 16px;
+  margin-top: 60px;
 }
 
 .JPgallery{
@@ -2051,5 +2052,142 @@ lara{padding-bottom: 300px;}
     margin-left: 340px;
     object-fit: cover; 
   }
+  .light-mode {
+    background-color: #fff;
+    color: #000;
+  }
+  
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+
+#toggleMode {
+       width: 40px;
+        height: 40px;
+        background-color: #ffffff;
+        border: 1px solid #222;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 70px 30px 0px 0px;
+}
+
+#toggleMode:hover {
+    color: #35c7f4;
+    transition: 0.5s ease;
+    background-color:black
+}
+ 
+.h1{
+    text-align: center;
+
+}
+
+
+
+
+
+.Reviewall-0{ 
+    padding: 20px 0;
+    color: #434343;
+    text-align: center;
+}
+.inner-0{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+.border-0{
+    width: 110px;
+    height: 5px;
+    background: black;
+    margin: 0 auto  ;
+}
+
+.row-0{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col-0{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.review-0{
+    
+    padding: 30px;
+    border-radius: 20px;
+}
+.review-0 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.name-0{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.stars-0{
+    color:rgb(0, 191, 255);
+    margin-bottom: 20px ;
+}
+
+.footercontainer-0{
+    width: 100%;
+}
+.socialicons-0{
+    display: flex;
+    justify-content: center;
+}
+.socialicons-0 a{
+    padding: 10px ;
+    margin: 10px ;
+    background-color: white;
+    border-radius: 50% ;
+    text-decoration: none;
+}
+.socialicons-0 a i{
+    font-size: 22px;
+    color: black;
+    transition: 0.5s;
+  
+} 
+.socialicons-0 a:hover{
+    background-color:#f8e8d9;
+}
+.socialicons-0 a:hover i{
+    color:rgb(15, 160, 148);
+    transform:scale(1.4) ;
+}
+.footernav-0 ul {
+    display: flex;
+    justify-content: center;
+    list-style-type:none;
+}
+.footernav-0 ul li a{
+  
+    margin: 20px; 
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.footernav-0 ul li a:hover{
+    color: rgb(0, 255, 225);
+    transform: scale(1.2);
+}
+.footerbottom-0{
+   
+    padding: 10px;
+    text-align: center;
+    
+}
 
     /* sama mohamed */
